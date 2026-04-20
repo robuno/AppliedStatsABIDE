@@ -1,0 +1,69 @@
+region,ICC,eta2,d_before,d_after,delta_d,p_A,p_B1_fdr,p_B2_fdr,sig_B1_fdr,sig_B2_fdr,sig_both_fdr,category,final_verdict
+lh_superiortemporal,0.5688,0.559,0.0487,0.0797,-0.031,0.4891,0.329,0.5516,False,False,False,Not significant,Not confirmed
+rh_superiortemporal,0.5555,0.5458,0.0221,0.046,-0.0238,0.7638,0.6,0.7107,False,False,False,Not significant,Not confirmed
+lh_middletemporal,0.5467,0.5372,0.0074,0.0157,-0.0083,0.9385,0.7668,0.7922,False,False,False,Not significant,Not confirmed
+rh_middletemporal,0.5391,0.5296,-0.0294,-0.0359,-0.0065,0.6018,0.816,0.7107,False,False,False,Not significant,Not confirmed
+rh_insula,0.5048,0.496,-0.0165,-0.0401,-0.0237,0.691,0.6959,0.5871,False,False,False,Not significant,Not confirmed
+lh_lingual,0.5022,0.4934,0.1055,0.154,-0.0484,0.0142,0.01,0.0174,True,True,True,Strong ASD signal,Confirmed ASD signal
+rh_lateraloccipital,0.4975,0.4888,0.1698,0.1673,0.0025,0.0008,0.01,0.013,True,True,True,Strong ASD signal,Confirmed ASD signal
+rh_fusiform,0.4935,0.4849,-0.013,-0.0383,-0.0252,0.8989,0.8161,0.6321,False,False,False,Not significant,Not confirmed
+lh_lateraloccipital,0.4787,0.4704,0.1734,0.1924,-0.0189,0.0004,0.0096,0.0085,True,True,True,Strong ASD signal,Confirmed ASD signal
+rh_parstriangularis,0.4728,0.4647,-0.0345,0.0454,-0.0109,0.8267,0.4491,0.5516,False,False,False,Not significant,Not confirmed
+rh_inferiortemporal,0.4728,0.4647,-0.0273,-0.0644,-0.0371,0.6002,0.6016,0.5161,False,False,False,Not significant,Not confirmed
+rh_temporalpole,0.4638,0.4559,-0.0365,-0.059,-0.0225,0.4389,0.6,0.5516,False,False,False,Not significant,Not confirmed
+rh_lingual,0.4617,0.4538,0.1317,0.1731,-0.0414,0.0039,0.0096,0.0097,True,True,True,Strong ASD signal,Confirmed ASD signal
+rh_supramarginal,0.457,0.4492,-0.041,-0.0548,-0.0138,0.5794,0.6959,0.6183,False,False,False,Not significant,Not confirmed
+lh_bankssts,0.4349,0.4277,0.0067,0.035,-0.0283,0.798,0.6,0.7107,False,False,False,Not significant,Not confirmed
+lh_transversetemporal,0.434,0.4269,0.0463,0.0808,-0.0346,0.2803,0.2027,0.298,False,False,False,Not significant,Not confirmed
+rh_bankssts,0.4322,0.4251,-0.0072,-0.0002,0.007,0.9754,0.8241,0.8593,False,False,False,Not significant,Not confirmed
+lh_parstriangularis,0.4311,0.424,0.0117,0.0756,-0.064,0.5815,0.1979,0.329,False,False,False,Site-suppressed signal,Not confirmed
+lh_posteriorcingulate,0.4309,0.4239,0.0783,0.1098,-0.0316,0.0481,0.1038,0.1504,False,False,False,Strong ASD signal,Not confirmed
+rh_rostralmiddlefrontal,0.4307,0.4236,-0.036,0.0685,-0.0325,0.8757,0.2249,0.3554,False,False,False,Not significant,Not confirmed
+lh_supramarginal,0.4291,0.4221,-0.0377,-0.0362,0.0015,0.7007,0.8886,0.8505,False,False,False,Not significant,Not confirmed
+lh_parsopercularis,0.4182,0.4116,0.0057,0.0295,-0.0239,0.7784,0.6029,0.7107,False,False,False,Not significant,Not confirmed
+rh_lateralorbitofrontal,0.4123,0.4058,-0.0446,0.0064,0.0383,0.644,0.7709,0.9121,False,False,False,Not significant,Not confirmed
+rh_precuneus,0.4097,0.4033,0.0169,-0.0072,0.0097,0.3843,0.7709,0.7107,False,False,False,Not significant,Not confirmed
+rh_transversetemporal,0.4087,0.4023,0.0751,0.0884,-0.0133,0.1129,0.1803,0.1446,False,False,False,Site-suppressed signal,Not confirmed
+rh_entorhinal,0.4082,0.4018,-0.1144,-0.1676,-0.0532,0.0564,0.0647,0.0342,False,True,False,Site-suppressed signal,Not confirmed
+lh_precuneus,0.4058,0.3995,0.0248,0.0148,0.0099,0.3146,0.6259,0.6321,False,False,False,Not significant,Not confirmed
+rh_parsorbitalis,0.4054,0.3992,-0.0542,0.015,0.0392,0.5862,0.7083,0.7952,False,False,False,Not significant,Not confirmed
+lh_fusiform,0.4011,0.395,-0.0207,-0.0271,-0.0064,0.8145,0.8922,0.703,False,False,False,Not significant,Not confirmed
+lh_caudalmiddlefrontal,0.4,0.3939,-0.0027,-0.0081,-0.0054,0.8031,0.8241,0.9121,False,False,False,Not significant,Not confirmed
+rh_parsopercularis,0.4,0.3939,-0.1052,-0.0745,0.0307,0.1276,0.6016,0.5516,False,False,False,Not significant,Not confirmed
+lh_insula,0.3978,0.3918,-0.029,-0.0547,-0.0257,0.5723,0.6259,0.6321,False,False,False,Not significant,Not confirmed
+lh_precentral,0.3968,0.3909,-0.0382,-0.0791,-0.0409,0.6683,0.6,0.6321,False,False,False,Not significant,Not confirmed
+lh_rostralmiddlefrontal,0.3959,0.39,0.058,0.1131,-0.0551,0.1614,0.0533,0.0649,False,False,False,Site-suppressed signal,Not confirmed
+lh_lateralorbitofrontal,0.393,0.3872,-0.0233,0.0324,-0.0092,0.877,0.6,0.7109,False,False,False,Not significant,Not confirmed
+lh_superiorfrontal,0.3853,0.3798,-0.0393,-0.0064,0.0329,0.8396,0.7709,0.9887,False,False,False,Not significant,Not confirmed
+rh_posteriorcingulate,0.3838,0.3783,0.0346,0.0401,-0.0055,0.3026,0.6,0.6321,False,False,False,Not significant,Not confirmed
+lh_entorhinal,0.3819,0.3765,-0.1584,-0.2101,-0.0517,0.0063,0.01,0.0085,True,True,True,Strong ASD signal,Confirmed ASD signal
+lh_inferiorparietal,0.3784,0.3731,0.0496,0.0504,-0.0008,0.1596,0.3051,0.263,False,False,False,Not significant,Not confirmed
+lh_cuneus,0.3766,0.3714,0.1476,0.1683,-0.0207,0.001,0.01,0.0096,True,True,True,Strong ASD signal,Confirmed ASD signal
+lh_isthmuscingulate,0.3761,0.3709,0.0271,0.0283,-0.0012,0.4313,0.6701,0.7107,False,False,False,Not significant,Not confirmed
+lh_temporalpole,0.3727,0.3676,-0.1033,-0.1121,-0.0088,0.0618,0.2249,0.1444,False,False,False,Site-suppressed signal,Not confirmed
+rh_inferiorparietal,0.3719,0.3669,0.0163,-0.005,0.0113,0.4861,0.7709,0.7992,False,False,False,Not significant,Not confirmed
+lh_inferiortemporal,0.3705,0.3655,0.0042,0.0058,-0.0016,0.9375,0.816,0.9874,False,False,False,Not significant,Not confirmed
+rh_precentral,0.3702,0.3652,-0.0902,-0.1069,-0.0167,0.2109,0.3978,0.4326,False,False,False,Not significant,Not confirmed
+lh_rostralanteriorcingulate,0.3592,0.3546,0.0038,0.0229,-0.0192,0.8636,0.6959,0.8948,False,False,False,Not significant,Not confirmed
+rh_paracentral,0.3557,0.3513,-0.1092,-0.1456,-0.0364,0.1151,0.1297,0.1504,False,False,False,Site-suppressed signal,Not confirmed
+rh_superiorfrontal,0.3556,0.3512,-0.104,-0.027,0.077,0.188,0.9461,0.7309,False,False,False,Not significant,Not confirmed
+lh_paracentral,0.3533,0.349,-0.0273,-0.0483,-0.021,0.9819,0.816,0.8907,False,False,False,Not significant,Not confirmed
+rh_cuneus,0.3472,0.3431,0.0857,0.0868,-0.001,0.0404,0.1979,0.1828,False,False,False,Strong ASD signal,Not confirmed
+rh_isthmuscingulate,0.3414,0.3376,-0.0302,-0.0405,-0.0102,0.7783,0.7709,0.7107,False,False,False,Not significant,Not confirmed
+lh_caudalanteriorcingulate,0.3379,0.3342,0.0007,-0.0022,-0.0014,0.7767,0.8525,0.9121,False,False,False,Not significant,Not confirmed
+lh_parsorbitalis,0.3344,0.3308,-0.0066,0.0378,-0.0313,0.8568,0.6,0.6183,False,False,False,Not significant,Not confirmed
+lh_medialorbitofrontal,0.3331,0.3296,0.0934,0.1571,-0.0637,0.0587,0.0166,0.0164,True,True,True,Site-suppressed signal,Confirmed ASD signal
+lh_pericalcarine,0.3326,0.3291,0.1359,0.1616,-0.0257,0.0032,0.0166,0.0156,True,True,True,Strong ASD signal,Confirmed ASD signal
+rh_medialorbitofrontal,0.3287,0.3255,-0.0447,0.0424,0.0023,0.7449,0.4906,0.6183,False,False,False,Not significant,Not confirmed
+lh_superiorparietal,0.3081,0.3058,0.0546,0.0309,0.0237,0.1222,0.5246,0.4326,False,False,False,Not significant,Not confirmed
+lh_postcentral,0.3021,0.3001,0.0486,0.0145,0.034,0.3182,0.7174,0.6321,False,False,False,Not significant,Not confirmed
+rh_parahippocampal,0.301,0.299,-0.0791,-0.0997,-0.0206,0.2441,0.471,0.4326,False,False,False,Not significant,Not confirmed
+rh_frontalpole,0.2988,0.2969,-0.0361,0.0489,-0.0127,0.8419,0.4906,0.6321,False,False,False,Not significant,Not confirmed
+rh_pericalcarine,0.2975,0.2956,0.1225,0.1353,-0.0127,0.0121,0.0666,0.0494,False,True,False,Strong ASD signal,Not confirmed
+rh_superiorparietal,0.2962,0.2944,0.0415,0.0087,0.0327,0.2224,0.6722,0.6321,False,False,False,Not significant,Not confirmed
+rh_caudalmiddlefrontal,0.2914,0.2899,-0.136,-0.1135,0.0225,0.0471,0.3051,0.263,False,False,False,False positive (site artifact),Not confirmed
+rh_postcentral,0.2896,0.2882,0.0865,0.0726,0.014,0.112,0.3126,0.3554,False,False,False,Not significant,Not confirmed
+rh_caudalanteriorcingulate,0.2841,0.2829,-0.0652,-0.0624,0.0027,0.3861,0.626,0.5516,False,False,False,Not significant,Not confirmed
+lh_frontalpole,0.2553,0.2556,-0.0221,0.0248,-0.0028,0.9415,0.6259,0.6622,False,False,False,Not significant,Not confirmed
+rh_rostralanteriorcingulate,0.2368,0.2382,-0.0317,-0.0044,0.0273,0.7316,0.8922,0.9874,False,False,False,Not significant,Not confirmed
+lh_parahippocampal,0.2267,0.2286,-0.1151,-0.1408,-0.0257,0.0747,0.1803,0.1504,False,False,False,Site-suppressed signal,Not confirmed
