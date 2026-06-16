@@ -1,0 +1,11 @@
+region,effect_dR2_pct,perm_q_sig,multiverse_pct_sig,age_restrict_hits,boot_window,region_specific,TIER
+rh_superiorfrontal,1.139,True,50.0,4,True,True,Tier 1: robust developmental
+lh_entorhinal,0.61,True,44.0,4,True,False,Tier 1: robust developmental
+rh_caudalmiddlefrontal,0.957,True,44.0,3,True,False,Tier 1: robust developmental
+lh_superiorfrontal,0.915,True,39.0,3,True,False,Tier 1: robust developmental
+lh_transversetemporal,0.841,True,28.0,2,False,False,Tier 3: fragile / tail-driven
+rh_rostralmiddlefrontal,0.657,True,33.0,1,True,False,Tier 3: fragile / tail-driven
+lh_precuneus,0.888,True,11.0,0,True,False,Tier 3: fragile / tail-driven
+lh_lingual,0.845,True,11.0,0,False,False,Tier 3: fragile / tail-driven
+rh_superiorparietal,0.79,True,11.0,0,False,False,Tier 3: fragile / tail-driven
+rh_inferiorparietal,0.763,True,11.0,0,True,False,Tier 3: fragile / tail-driven

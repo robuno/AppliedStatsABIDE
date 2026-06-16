@@ -1,0 +1,11 @@
+region,interaction_beta,perm_q,dR2_pct,multiverse_pct,region_specific_q
+rh_superiorfrontal,-0.0064,0.0067,1.139,50.0,0.0333
+lh_superiorfrontal,-0.0056,0.0067,0.9154,38.8889,0.1048
+rh_caudalmiddlefrontal,-0.0054,0.0067,0.957,44.4444,0.0964
+lh_transversetemporal,-0.006,0.0067,0.8413,27.7778,0.2247
+rh_rostralmiddlefrontal,-0.0047,0.0171,0.6568,33.3333,0.1199
+lh_precuneus,-0.004,0.02,0.8878,11.1111,0.3047
+lh_entorhinal,-0.01,0.0067,0.6101,44.4444,0.0964
+rh_superiorparietal,-0.0037,0.0279,0.7896,11.1111,0.2247
+rh_inferiorparietal,-0.0042,0.0279,0.7631,11.1111,0.3218
+lh_lingual,-0.0035,0.0067,0.8447,11.1111,0.3218
