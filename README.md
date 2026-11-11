@@ -100,16 +100,16 @@ $$
    - **Model B1 (ComBat + OLS):** Identical linear model fitted on ComBat-harmonised residuals.
    - **Model B2 (Linear Mixed-Effects Model - LMM):** `Thickness ~ DX + Age + Sex + (1 | SITE_ID)` fitted via REML.
 
-4. **Multiple Testing Correction:** Benjamini–Hochberg False Discovery Rate (FDR, $q < 0.05$) across all 68 ROIs.
+4. **Multiple Testing Correction:** Benjamini–Hochberg False Discovery Rate (FDR, q < 0.05) across all 68 ROIs.
 
 #### What We Found
-* **Massive Site Contamination:** 59 of 68 cortical regions exhibited ICC > 0.30 (mean ICC = 0.39), with the left superior temporal gyrus reaching ICC = 0.569 (56.9% scanner artifact). Pearson correlation between ICC and η² was $r = 1.00$ ($p = 1.1 \times 10^{-142}$).
+* **Massive Site Contamination:** 59 of 68 cortical regions exhibited ICC > 0.30 (mean ICC = 0.39), with the left superior temporal gyrus reaching ICC = 0.569 (56.9% scanner artifact). Pearson correlation between ICC and η² was r = 1.00 (p = 1.1 × 10⁻¹⁴²).
 * **Signal Suppression Dwarfs False Positives:** Contrary to the popular assumption that site effects merely create false positives, site noise primarily *suppressed* real differences (mean |Cohen's d| increased from 0.057 to 0.067 post-ComBat; effect size increased in 49/68 regions).
 * **The Confirmed 8-Region Biological Signature:**
-  - Naive Model A found 11 nominally significant regions. After ComBat/LMM and FDR correction ($q < 0.05$), **8 regions were rigorously confirmed** by both Models B1 and B2:
+  - Naive Model A found 11 nominally significant regions. After ComBat/LMM and FDR correction (q < 0.05), **8 regions were rigorously confirmed** by both Models B1 and B2:
     - **Visual Processing Cortices (7 regions thinner in ASD):** Bilateral lateral occipital (β̂ ≈ -0.038 mm), bilateral lingual (β̂ ≈ -0.034 mm), left cuneus (β̂ = -0.044 mm), and left pericalcarine (β̂ = -0.041 mm).
     - **Social Reward Processing (1 region thinner in ASD):** Left medial orbitofrontal (β̂ = -0.042 mm).
-    - **Atypical Circuitry (1 region thicker in ASD):** Left entorhinal cortex (β̂ = +0.098 mm, $q = 0.009$).
+    - **Atypical Circuitry (1 region thicker in ASD):** Left entorhinal cortex (β̂ = +0.098 mm, q = 0.009).
   - One false positive from naive analysis was eliminated (`rh_caudalmiddlefrontal`), while 8 genuine biological signals previously suppressed by site noise were revealed.
 
 ---
@@ -120,7 +120,7 @@ $$
 *How many orthogonal dimensions capture the essential variance of 68-region cortical thickness? Does dimensionality reduction enhance ASD–Control group separability (Hotelling’s T²)? Can unsupervised clustering reveal distinct neurobiological ASD subtypes that align with clinical symptom severity (ADOS)?*
 
 #### Methodology
-1. **Standardization & PCA:** Z-score standardization across all 68 Desikan-Killiany regions, followed by Principal Component Analysis (PCA) on the $n \times 68$ matrix.
+1. **Standardization & PCA:** Z-score standardization across all 68 Desikan-Killiany regions, followed by Principal Component Analysis (PCA) on the n × 68 matrix.
 2. **Multivariate Group Hypothesis Testing:** Hotelling’s T² two-sample multivariate test comparing the joint mean vectors of ASD vs. Controls in full-dimensional and PCA-reduced subspaces:
 
 $$
@@ -138,7 +138,7 @@ $$
    - Residuals for ASD subjects were computed against this normative baseline:
 
 $$
-\text{Residual}_{\text{ASD}} = \text{Thickness}_{\text{Observed}} - \widehat{\text{Thickness}}_{\text{Predicted(Control)}}
+\text{Residual}_{\text{ASD}} = \text{Thickness}_{\text{Observed}} - \widehat{\text{Thickness}}_{\text{Control}}
 $$
 
 5. **Feature Selection & Asymmetry Index (AI):** Restricting clustering to confirmed RQ1 regions, and calculating hemispheric asymmetry:
@@ -154,7 +154,7 @@ $$
 * **Biological Meaning of Components:**
   - **PC1:** Represents a *global thickness factor* (all 68 regions load positively).
   - **PC2:** Captures an *Occipital–Temporal polarity gradient*.
-* **Multivariate Difference vs. Overlapping Distributions:** Hotelling’s T² test was statistically significant ($p < 0.01$), formally proving a multivariate anatomical difference exists. However, scatter plots of PC1 vs. PC2 show nearly complete overlap between the ASD and Control distributions—confirming that the dominant sources of structural brain variance are not autism-specific.
+* **Multivariate Difference vs. Overlapping Distributions:** Hotelling’s T² test was statistically significant (p < 0.01), formally proving a multivariate anatomical difference exists. However, scatter plots of PC1 vs. PC2 show nearly complete overlap between the ASD and Control distributions—confirming that the dominant sources of structural brain variance are not autism-specific.
 * **Failure of Simple Subtyping:** Unsupervised clustering without age residualization simply grouped older vs. younger brains. Even after removing age effects (reducing age correlation by 76%) or clustering on the Asymmetry Index, the resulting clusters did not map to ADOS symptom severity (η² = -0.003). Clinical severity in ASD is multidimensional and cannot be recovered via discrete clustering of static cortical thickness.
 
 ---
@@ -209,11 +209,11 @@ $$
 1. **Linear Mixed-Effects Models (LMM):**
    - Fitted across all 68 ROIs across 1,027 subjects from 20 sites:
 
-$$
-\text{Thickness} \sim \text{DX\_GROUP} \times \text{age}_c + \text{SEX} + (1 \mid \text{SITE\_ID})
-$$
+```text
+Thickness ~ DX_GROUP × age_c + SEX + (1 | SITE_ID)
+```
 
-   - Tested the interaction term ($\text{DX} \times \text{age}_c$) for slope divergence with Benjamini-Hochberg FDR correction ($q < 0.05$).
+   - Tested the interaction term (`DX × age_c`) for slope divergence with Benjamini-Hochberg FDR correction (q < 0.05).
 
 2. **Normative Modeling ("Growth Chart" Approach):**
    - Fitted a Gaussian spline normative model exclusively on neurotypical Controls:
@@ -222,15 +222,21 @@ $$
 \mu_c(\text{age}) = X_c\beta \quad \text{and} \quad \sigma^2_c(\text{age}) = \exp(X_c\gamma)
 $$
 
-   - Quantified individual ASD deviation $z$-scores ($z_{\text{ASD}} = [y - \mu_c] / \sigma_c$) and tested for systematic age-dependent drift.
+   - Quantified individual ASD deviation z-scores:
 
-3. **DerSimonian–Laird Random-Effects Meta-Analysis:** Treated each of the 20 sites as an independent study, pooling slope differences with inverse-variance weighting and measuring heterogeneity via $I^2$.
+$$
+z_{\text{ASD}} = \frac{y - \mu_c}{\sigma_c}
+$$
+
+   and tested for systematic age-dependent drift.
+
+3. **DerSimonian–Laird Random-Effects Meta-Analysis:** Treated each of the 20 sites as an independent study, pooling slope differences with inverse-variance weighting and measuring heterogeneity via I².
 
 4. **Generalized Additive Mixed Models (GAMM):** Estimated non-linear trajectories $s(\text{age}_c)$ and computed their first derivatives ($d\text{Thickness}/d\text{Age}$) via bootstrap resampling to determine thinning velocity and peak thinning timing.
 
 5. **Brain-Age Gap (BrainAGE):** Trained a Ridge Regression model on healthy controls to predict chronological age from cortical thickness, computing `BrainAGE Gap = Predicted Age - Chronological Age` in ASD.
 
-6. **Multiverse Specification Curve & Permutation Testing:** Tested trajectory robustness across 18 combinatorial pipelines, computed Bayes Factors ($BF_{10}$), and ran 500 within-site label permutations.
+6. **Multiverse Specification Curve & Permutation Testing:** Tested trajectory robustness across 18 combinatorial pipelines, computed Bayes Factors (BF₁₀), and ran 500 within-site label permutations.
 
 #### What We Found
 * **Attenuated Cortical Thinning in ASD:** Across 10 FDR-significant regions (predominantly frontal and entorhinal), **the rate of age-related cortical thinning was significantly slower in ASD than in Controls**. In the left entorhinal cortex, the thinning slope in ASD was virtually flat (slope ≈ 0).
@@ -238,11 +244,11 @@ $$
 * **The Critical Discovery — A Global, Brain-Wide Phenomenon:**
   - When *mean whole-brain cortical thickness* was entered as a covariate, the region-specific interaction effects disappeared.
   - This demonstrates that **attenuated cortical thinning in autism is not a localized frontal deficit, but a global, brain-wide slowing of cortical pruning and maturation**.
-* **Consistent but Modest Effect:** Random-effects meta-analysis confirmed low across-site heterogeneity ($I^2 \approx 0\%$), proving a universal biological effect; however, Nakagawa’s ΔR² showed the interaction explains ~0.8% of total variance.
+* **Consistent but Modest Effect:** Random-effects meta-analysis confirmed low across-site heterogeneity (I² ≈ 0%), proving a universal biological effect; however, Nakagawa’s ΔR² showed the interaction explains ~0.8% of total variance.
 * **Negative Findings (Ruled Out Hypotheses):**
   - **No Clinical Moderation:** Trajectory slopes did not scale with ADOS severity.
   - **No Dispersion Heterogeneity:** Fligner–Killeen and location-scale tests disproved the theory that ASD brains exhibit greater variance/dispersion than controls.
-  - **No Hemispheric Asymmetry Interaction:** Hemispheric asymmetry ($L - R$) showed no significant age-by-diagnosis interaction.
+  - **No Hemispheric Asymmetry Interaction:** Hemispheric asymmetry (L - R) showed no significant age-by-diagnosis interaction.
 
 ---
 
